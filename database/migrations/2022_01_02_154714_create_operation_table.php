@@ -15,7 +15,7 @@ class CreateOperationTable extends Migration
     {
         Schema::create('operation', function (Blueprint $table) {
             $table->bigInteger('id',20)->nullable();
-            $table->VARCHAR('content',191)->nullable();
+            $table->ipAddress('content',191)->nullable();
             $table->timestamp('created_at');
             $table->timestamp('updated_at');
         });
